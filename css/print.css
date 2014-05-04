@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* etiquetas html */
+html, body{
+    height:100%;
+    z-index: 1;
+}
+body {
+    font: 13px/18px 'Arial', sans-serif;
+    color: #4b4b4b;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+header{
+    background-color: #5593ca;
+    height: 5%;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
+}
+footer {
+    width: 100%;
+    height: 5%;
+    background: #5593ca;
+    color: white;
+    clear: both;
+    bottom: 0px;
+    position: relative;
+    display: none;
+}
+a {
+    color: #5593ca;
+    text-decoration: none;
+}
+table{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+} 
+tr{
+    vertical-align: top;
+}
+td{
+    width: 14%;
+    border: 1px solid rgba(85, 147, 202, 0.08);
+}
+body{
+    background: white;
+}
+.big-name {  
+    text-decoration: none;  
+    font-size: 25px; 
+    color: rgba(85, 147, 202, 1); 
+    padding: 10px;
+    display: inline-block;
+}
+.big-link { 
+    display: inherit; 
+    text-decoration: none; 
+    text-align: left; 
+    font-size: 30px; 
+    color: rgba(85, 147, 202, 1); 
+    padding: 10px;
+}
+.numerooculto{
+    display: inherit; 
+    text-decoration: none; 
+    text-align: left; 
+    font-size: 30px; 
+    color: rgba(85, 147, 202, 0); 
+    padding: 10px;
+    opacity: 0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+.contenido-calendario{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.calendario{
+    margin: 0 auto;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+#botonant{
+    position: relative;
+    left: 0px;
+    display: none;
+}
+#botonsig{
+    position: relative;
+    right: 0px;
+    display: none;
+}
+.fijo{
+    width: 180px;
+}
+#year{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.mes{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.diaactual{
+    background: rgba(55, 166, 201, 0.22);
+}
+.diaactual a{
+    color: #000000;
+}
+.filas-peq{
+    height: 5%;
+}
+
+/* CONTENIDO */
+.contenido-calendario {
+    width: 100%;
+}
+
+/* ETIQUETAS */
+.colores{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin:-1px 1px -1px 1px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.etiqueta{
+    display: inline-block;      
+}
+.colores-etiquetas-creadas{
+    
+}
+.estilo-evento{
+    display: block;
+    padding: 2% 0%;
+    margin: 2% auto;
+    border-radius: 5px;
+    width: 95%;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+.estilo-evento-dia{
+    display: block;
+    padding: 1% 0%;
+    margin: 2%;
+    border-radius: 5px;
+    width: 10%;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+.estilo-evento-diario{
+    width: 100%;
+    display: block;
+    height: 100%;
+    z-index: 101;
+}
+.estilo-evento a{
+    color: rgb(0, 0, 0);
+}
+.estilo-evento-dia a{
+    color: rgb(0, 0, 0);
+}
+.colores{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.colores-etiquetas-creadas{
+    display: inline-block;
+    margin: 2px 2px 2px 2px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    min-width: 130px;
+}
+.etiqueta{
+    display: inline-block;      
+}
+#colord{ background: #5593ca;}#color0{ background: #000000;}#color1{ background: #000033;}#color2{ background: #000066;}#color3{ background: #000099;}#color4{ background: #0000CC;}#color5{ background: #0000FF;}#color6{ background: #003300;}#color7{ background: #003333;}#color8{ background: #003366;}#color9{ background: #003399;}#color10{ background: #0033CC;}#color11{ background: #0033FF;}#color12{ background: #006600;}#color13{ background: #006633;}#color14{ background: #006666;}#color15{ background: #006699;}#color16{ background: #0066CC;}#color17{ background: #0066FF;}#color18{ background: #009900;}#color19{ background: #009933;}#color20{ background: #009966;}#color21{ background: #009999;}#color22{ background: #0099CC;}#color23{ background: #0099FF;}#color24{ background: #00CC00;}#color25{ background: #00CC33;}#color26{ background: #00CC66;}#color27{ background: #00CC99;}#color28{ background: #00CCCC;}#color29{ background: #00CCFF;}#color30{ background: #00FF00;}#color31{ background: #00FF33;}#color32{ background: #00FF66;}#color33{ background: #00FF99;}#color34{ background: #00FFCC;}#color35{ background: #00FFFF;}#color36{ background: #330000;}#color37{ background: #330033;}#color38{ background: #330066;}#color39{ background: #330099;}#color40{ background: #3300CC;}#color41{ background: #3300FF;}#color42{ background: #333300;}#color43{ background: #333333;}#color44{ background: #333366;}#color45{ background: #333399;}#color46{ background: #3333CC;}#color47{ background: #3333FF;}#color48{ background: #336600;}#color49{ background: #336633;}#color50{ background: #336666;}#color51{ background: #336699;}#color52{ background: #3366CC;}#color53{ background: #3366FF;}#color54{ background: #339900;}#color55{ background: #339933;}#color56{ background: #339966;}#color57{ background: #339999;}#color58{ background: #3399CC;}#color59{ background: #3399FF;}#color60{ background: #33CC00;}#color61{ background: #33CC33;}#color62{ background: #33CC66;}#color63{ background: #33CC99;}#color64{ background: #33CCCC;}#color65{ background: #33CCFF;}#color66{ background: #33FF00;}#color67{ background: #33FF33;}#color68{ background: #33FF66;}#color69{ background: #33FF99;}#color70{ background: #33FFCC;}#color71{ background: #33FFFF;}#color72{ background: #660000;}#color73{ background: #660033;}#color74{ background: #660066;}#color75{ background: #660099;}#color76{ background: #6600CC;}#color77{ background: #6600FF;}#color78{ background: #660033;}#color79{ background: #663333;}#color80{ background: #663366;}#color81{ background: #663399;}#color82{ background: #6633CC;}#color83{ background: #6633FF;}#color84{ background: #666600;}#color85{ background: #666633;}#color86{ background: #666666;}#color87{ background: #666699;}#color88{ background: #6666CC;}#color89{ background: #6666FF;}#color90{ background: #669900;}#color91{ background: #669933;}#color92{ background: #669966;}#color93{ background: #669999;}#color94{ background: #6699CC;}#color95{ background: #6699FF;}#color96{ background: #66CC00;}#color97{ background: #66CC33;}#color98{ background: #66CC66;}#color99{ background: #66CC99;}#color100{ background: #66CCCC;}#color101{ background: #66CCFF;}#color102{ background: #66FF00;}#color103{ background: #66FF33;}#color104{ background: #66FF66;}#color105{ background: #66FF99;}#color106{ background: #66FFCC;}#color107{ background: #66FFFF;}#color108{ background: #990000;}#color109{ background: #990033;}#color110{ background: #990066;}#color111{ background: #990099;}#color112{ background: #9900CC;}#color113{ background: #9900FF;}#color114{ background: #993300;}#color115{ background: #993333;}#color116{ background: #993366;}#color117{ background: #993399;}#color118{ background: #9933CC;}#color119{ background: #9933FF;}#color120{ background: #996600;}#color121{ background: #996633;}#color122{ background: #996666;}#color123{ background: #996699;}#color124{ background: #9966CC;}#color125{ background: #9966FF;}#color126{ background: #999900;}#color127{ background: #999933;}#color128{ background: #999966;}#color129{ background: #999999;}#color130{ background: #9999CC;}#color131{ background: #9999FF;}#color132{ background: #99CC00;}#color133{ background: #99CC33;}#color134{ background: #99CC66;}#color135{ background: #99CC99;}#color136{ background: #99CCCC;}#color137{ background: #99CCFF;}#color138{ background: #99FF00;}#color139{ background: #99FF33;}#color140{ background: #99FF66;}#color141{ background: #99FF99;}#color142{ background: #99FFCC;}#color143{ background: #99FFFF;}#color144{ background: #CC0000;}#color145{ background: #CC0033;}#color146{ background: #CC0066;}#color147{ background: #CC0099;}#color148{ background: #CC00CC;}#color149{ background: #CC00FF;}#color150{ background: #CC3300;}#color151{ background: #CC3333;}#color152{ background: #CC3366;}#color153{ background: #CC3399;}#color154{ background: #CC33CC;}#color155{ background: #CC33FF;}#color156{ background: #CC6600;}#color157{ background: #CC6633;}#color158{ background: #CC6666;}#color159{ background: #CC6699;}#color160{ background: #CC66CC;}#color161{ background: #CC66FF;}#color162{ background: #CC9900;}#color163{ background: #CC9933;}#color164{ background: #CC9966;}#color165{ background: #CC9999;}#color166{ background: #CC99CC;}#color167{ background: #CC99FF;}#color168{ background: #CCCC00;}#color169{ background: #CCCC33;}#color170{ background: #CCCC66;}#color171{ background: #CCCC99;}#color172{ background: #CCCCCC;}#color173{ background: #CCCCFF;}#color174{ background: #CCFF00;}#color175{ background: #CCFF33;}#color176{ background: #CCFF66;}#color177{ background: #CCFF99;}#color178{ background: #CCFFCC;}#color179{ background: #CCFFFF;}#color180{ background: #FF0000;}#color181{ background: #FF0033;}#color182{ background: #FF0066;}#color183{ background: #FF0099;}#color184{ background: #FF00CC;}#color185{ background: #FF00FF;}#color186{ background: #FF3300;}#color187{ background: #FF3333;}#color188{ background: #FF3366;}#color189{ background: #FF3399;}#color190{ background: #FF33CC;}#color191{ background: #FF33FF;}#color192{ background: #FF6600;}#color193{ background: #FF6633;}#color194{ background: #FF6666;}#color195{ background: #FF6699;}#color196{ background: #FF66CC;}#color197{ background: #FF66FF;}#color198{ background: #FF9900;}#color199{ background: #FF9933;}#color200{ background: #FF9966;}#color201{ background: #FF9999;}#color202{ background: #FF99CC;}#color203{ background: #FF99FF;}#color204{ background: #FFCC00;}#color205{ background: #FFCC33;}#color206{ background: #FFCC66;}#color207{ background: #FFCC99;}#color208{ background: #FFCCCC;}#color209{ background: #FFCCFF;}#color210{ background: #FFFF00;}#color211{ background: #FFFF33;}#color212{ background: #FFFF66;}#color213{ background: #FFFF99;}#color214{ background: #FFFFCC;}#color215{ background: #FFFFFF;}
+
+.no-ver{
+    display: none;
+}

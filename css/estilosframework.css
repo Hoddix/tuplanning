@@ -1,0 +1,779 @@
+/* BOTONES */
+
+/* 
+Boton azul 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class bazul"
+*/
+.bazul{
+    background-color:  #3498db;
+    border: solid 1px #000;
+}
+.bazul:hover,
+.bazul:focus,
+.bazul:active{
+    color: #ffffff;
+    background-color: #5dade2;
+    border-color: #5dade2;
+    outline: none;
+}
+.bazul:active {
+    background: #2c81ba;
+    outline: none;
+}
+
+/* 
+Boton rojo 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class brojo"
+*/
+.brojo{
+    background-color:  #d9534f;
+    border: solid 1px #000;
+}
+.brojo:hover,
+.brojo:focus,
+.brojo:active{
+    color: #ffffff;
+    background-color: #ec7063;
+    border-color: #ec7063;
+    outline: none;
+}
+.brojo:active {
+    background: #c44133;
+    outline: none;
+}
+
+/* 
+Boton amarillo 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class bamarillo"
+*/
+.bamarillo{
+    background-color:  #f1c40f;
+    border: solid 1px #000;
+}
+.bamarillo:hover,
+.bamarillo:focus,
+.bamarillo:active{
+    color: #ffffff;
+    background-color: #f5d313;
+    border-color: #f5d313;
+    outline: none;
+}
+.bamarillo:active {
+    background: #cda70d;
+    outline: none;
+}
+
+/* 
+Boton gris 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class bgris"
+*/
+
+.bgris:hover,
+.bgris:focus,
+.bgris:active{
+    color: #ffffff;
+    background-color: #cacfd2;
+    border-color: #cacfd2;
+    outline: none;
+}
+.bgris:active {
+    background: #a1a6a9;
+    outline: none;
+}
+.bgris{
+    background-color:  #bdc3c7;
+    border: solid 1px #000;
+
+}
+/* 
+Boton negro 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class bnegro"
+*/
+.bnegro{
+    background-color:  #000000;
+    border: solid 1px #000;
+}
+.bnegro:hover,
+.bnegro:focus,
+.bnegro:active{
+    color: #ffffff;
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+    outline: none;
+}
+.bnegro:active {
+    background: #2d2d2d;
+    outline: none;
+}
+
+/* 
+Boton verde 
+Para utilizar este boton hay que cargar las siguientes clases:
+class="btn-class bverde"
+*/
+.bverde{
+    background-color:  #2ecc71;
+    border: solid 1px #000;
+}
+.bverde:hover,
+.bverde:focus,
+.bverde:active{
+    color: #ffffff;
+    background-color: #58d68d;
+    border-color: #58d68d;
+    outline: none;
+}
+.bverde:active {
+    background: #27ad60;
+    outline: none;
+}
+
+/* Clase principal del boton */
+.btn-class,.btn-class:hover{
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 1px 1px 0px #DDDDDD;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.extra{
+    padding: 5px 20px;
+}
+.extra:hover{
+    padding: 5px 20px;
+}
+/* CheckBox */
+#checkboxes{
+    display: inline-block;
+}
+#checkbox{
+    float: left;
+}
+.cb-class{
+    display: none;
+}
+.cb-class + label {
+    background: #fff;
+    margin: 5px 5px;
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url(../img/check.png) 0px 0px no-repeat;
+    text-indent: -1000em;
+    padding: 2px;
+}
+.cb-class-icon:hover{
+    background: url(../img/checkhover.png) 0px 0px no-repeat;
+}
+
+/* checkbox verde */
+.cb-verde:checked + label.cb-class-icon{
+    background: url(../img/checkverde.png) 0px 0px no-repeat;
+}
+
+/* checkbox rojo */
+.cb-rojo:checked + label.cb-class-icon {
+    background: url(../img/checkrojo.png) 0px 0px no-repeat;
+}
+
+/* checkbox azul */
+.cb-azul:checked + label.cb-class-icon {
+    background: url(../img/checkazul.png) 0px 0px no-repeat;
+}
+
+/* checkbox amarillo */
+.cb-amarillo:checked + label.cb-class-icon {
+    background: url(../img/checkamarillo.png) 0px 0px no-repeat;
+}
+
+/* checkbox negro */
+.cb-negro:checked + label.cb-class-icon {
+    background: url(../img/checknegro.png) 0px 0px no-repeat;
+}
+
+/* checkbox gris */
+.cb-gris:checked + label.cb-class-icon {
+    background: url(../img/checkgris.png) 0px 0px no-repeat;
+}
+
+/* Radio */
+#divradios{
+    display: inline-block;
+}
+#radios{
+    display: inline;
+    float: left;
+}
+.radio-class{
+    display:none;
+}
+.radio-class + .radio-class-label{
+    padding-left:25px;
+    height:20px;
+    display:inline-block;
+    line-height:20px;
+    background-repeat:no-repeat;
+    font-size:20px;
+    vertical-align:middle;
+    cursor:pointer;
+    margin: 5px;
+}
+.radio-class:checked + .radio-class-label{
+    background-position: 0 -20px;
+}
+.check{
+    color: red;
+}
+/*Radio Verde*/
+.label-verde{
+    background-image:url(../img/radioverde.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-verde:hover{
+    background-image:url(../img/radioverde.png);
+    background-position: 0 -20px;
+}
+
+/*Radio azul*/
+.label-azul{
+    background-image:url(../img/radioazul.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-azul:hover{
+    background-image:url(../img/radioazul.png);
+    background-position: 0 -20px;
+}
+
+/*Radio Rojo*/
+.label-rojo{
+    background-image:url(../img/radiored.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-rojo:hover{
+    background-image:url(../img/radiored.png);
+    background-position: 0 -20px;
+}
+
+/*Radio Amarillo*/
+.label-amarillo{
+    background-image:url(../img/radioamarillo.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-amarillo:hover{
+    background-image:url(../img/radioamarillo.png);
+    background-position: 0 -20px;
+}
+
+/*Radio Gris*/
+.label-gris{
+    background-image:url(../img/radiogris.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-gris:hover{
+    background-image:url(../img/radiogris.png);
+    background-position: 0 -20px;
+}
+
+/*Radio Negro*/
+.label-negro{
+    background-image:url(../img/radionegro.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label-negro:hover{
+    background-image:url(../img/radionegro.png);
+    background-position: 0 -20px;
+}
+
+/* Select */
+
+.select-class {
+    border: 2px solid #ccc;
+    width: 100px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-cal {
+    border: 2px solid #ccc;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+    /* margin: 10px 0px; */
+    height: 25px;
+}
+.select-class select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-cal select {
+    padding: 2px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class select:focus {
+    outline: none;
+}
+.select-class-cal select:focus {
+    outline: none;
+}
+
+/* SELECTS PARA AÑANADIR EVENTOS Y PARA EDITARLOS */
+.select-class-fechaifd {
+    border: 2px solid #ccc;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechaifm {
+    border: 2px solid #ccc;
+    width: 100px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechaify {
+    border: 2px solid #ccc;
+    width: 67px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechaifd select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechaifm select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechaify select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechaifd select:focus {
+    outline: none;
+}
+.select-class-fechaifm select:focus {
+    outline: none;
+}
+.select-class-fechaify select:focus {
+    outline: none;
+}
+#selectdiai{
+    display: inline-block;
+}
+#selectmesi{
+    display: inline-block;
+}
+#selectyeari{
+    display: inline-block;
+}
+#selectdiaf{
+    display: inline-block;
+}
+#selectmesf{
+    display: inline-block;
+}
+#selectyearf{
+    display: inline-block;
+}
+/* FIN DE SELECT */
+
+/* SELECTS PARA AÑANADIR FECHA USUARIO */
+.select-class-fechand {
+    border: 2px solid #ccc;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechanm {
+    border: 2px solid #ccc;
+    width: 100px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechany {
+    border: 2px solid #ccc;
+    width: 67px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-fechand select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechanm select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechany select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-fechand select:focus {
+    outline: none;
+}
+.select-class-fechanm select:focus {
+    outline: none;
+}
+.select-class-fechany select:focus {
+    outline: none;
+}
+#selectdian{
+    display: inline-block;
+}
+#selectmesn{
+    display: inline-block;
+}
+#selectyearn{
+    display: inline-block;
+}
+/* FIN DE SELECT */
+
+/* CLASES PARA LAS HORAS DE LOS EVENTOS */
+.select-class-horaifh {
+    border: 2px solid #ccc;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-horaifm {
+    border: 2px solid #ccc;
+    width: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+.select-class-horaifh select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-horaifm select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-class-horaifh select:focus {
+    outline: none;
+}
+.select-class-horaifm select:focus {
+    outline: none;
+}
+#selecthorai{
+    display: inline-block;
+}
+#selectmini{
+    display: inline-block;
+}
+#selecthoraf{
+    display: inline-block;
+}
+#selectminf{
+    display: inline-block;
+}
+/* FIN DE LAS CLASES */
+
+.select-verde{
+    background: #58d68d url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-azul{
+    background: #FFFFFF url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-rojo{
+    background: #ec7063 url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-amarillo{
+    background: #f5d313 url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-gris{
+    background: #cacfd2 url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-blanco{
+    background: white url("../img/icon-select.png") no-repeat 90% 50%;
+}
+.select-blanco-cal{
+    background: white url("../img/icon-select.png") no-repeat 98% 50%;
+}
+/* Input Text */
+
+.text-class-label{
+    margin-right: 20px;
+    width: 200px;
+    display: inline-block;
+}
+.text-class{
+    outline: none;
+    border-radius: 4px;
+    border: solid 2px #DBDBDB;
+    color: rgb(0, 0, 0);
+}
+.text-class:hover{
+    outline: none;
+    border-radius: 4px;
+    border: solid 2px #a1a1a1;
+    color:  color: rgb(0, 0, 0);
+    transition:all 0.3s ease-in 0s;
+}
+.text-class:focus{
+    outline: solid 1px #5593ca;
+    color:  color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in 0s;
+}
+
+.pequeno{
+    padding: 5px 10px;
+    height: 10px;
+    width: 90px;
+    font-size: 10px;
+    margin: 0px 2px 0px 0px;
+}
+.mediano{
+    padding: 10px 10px;
+    font-size: 16px;
+    height: 10px;
+    width: 150px;
+    margin: 15px;
+}
+.grande{
+    padding: 0px 10px;
+    width: 150px;
+    height: 45px;
+    margin: 15px;
+    font-size: 23px;
+}
+.imagen{
+    padding: 10px 10px;
+    height: 15px;
+    width: 160px;
+    font-size: 10px;
+    margin: 10px 0px 10px 1px;
+    font-size: 18px;
+}
+.text-class-icon{
+    background: url(../img/texta.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: inline;
+    margin: 20px 0px 0px 158px;
+}
+
+/* Tablas con Scroll */
+/*.scroll{
+    width:100%;
+    overflow-y:scroll;
+    height:80px;
+}
+
+table{
+    border-collapse:collapse;
+    border-radius: 5px;
+}
+th{
+    font-family:Times;
+    font-size:11pt;
+    border-bottom:1px solid #fff;
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+    color:#fff;
+    padding:1px 1px 0;
+    background-color:#006BB2;
+}
+td{
+    font-family:Times;
+    font-size:11pt;
+    text-align: center;
+    border-bottom:1px
+    solid #fff;
+    border-right:1px solid #fff;
+    color:black;
+    padding:1px 1px 0;
+}
+tr {
+    background-color:#F8FBFF
+}
+.madre{
+    width: 40%;
+}
+.hija{
+    width: 100%;
+}
+.col1{
+    width: 200px;
+}
+.col2{
+    width: 200px;
+}
+.col3{
+    width: 200px;
+}
+tr:nth-child(odd){
+    background-color:#ffffff;
+}
+tr:nth-child(even){
+    background-color:#d3e9ff;
+}*/
+
+
+
+/* CODIGO AÑANADIDO PARA TUPLANNING */
+.dcheck{
+    margin: 10px 0px;
+}
+.checksize {
+    margin: 0px 5px 0px 0px;
+    height: 20px;
+    width: 20px;
+}
+.dcheckb{
+    width: 20px;
+    
+    height: 20px;
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+/*input text y textarea*/
+.text-class-iconp{
+    background: url(../img/texta.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: inline;
+    margin: 4px 0px 0px 109px;
+}
+.text-class-icong{
+    background: url(../img/texta.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: inline;
+    margin: 4px 0px 0px 249px;
+}
+.text-class-icon-cien {
+    background: url(../img/texta.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: inline;
+    margin: 20px 0px 0px 346px;
+}
+.eventos{
+    padding: 5px 10px;
+    height: 15px;
+    width: 110px;
+    font-size: 12px;
+    margin: 0px 2px 10px 0px;
+}
+.eventosgrande{
+    padding: 5px 10px;
+    height: 15px;
+    width: 250px;
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+}
+.txtarea{
+    padding: 0px 10px;
+    width: 90%;
+    height: 100px;
+    margin: 0px;
+    font-size: 12px;
+}
+.cien{
+    width: 349px;
+}
